@@ -72,6 +72,16 @@ nav a{
   position: relative;
 }
 
+/*header mobile*/
+@media only screen and (max-width: 600px){
+  .main-nav, .logo-text{
+    display: none;
+  }
+  header{
+    height: 3.44rem;
+  }
+}
+
 /* menu effects */
 nav a:hover{
   color: #457EAC;
