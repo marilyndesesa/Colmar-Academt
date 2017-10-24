@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width-device-width, initial-scale=1.0">
     <link href="Resources/CSS/reset.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Quattrocento+Sans:400,700" rel="stylesheet">
     <link href="Resources/CSS/style.css" rel="stylesheet" type="text/css">
     <title>Colmar Academy</title>
   </head>
@@ -11,24 +12,24 @@
   <body>
 
     <!-- Header -->
-    <div class="header flex">
+    <header class="flex">
 
       <div class="flex logo">
         <img src="Resources/Images/ic-logo.svg" alt="logo" />
         <span class="logo-text flex"><span class="bold">COLMAR</strong></span><span class="light">ACADMEY</span></span>
       </div>
 
-      <div class="flex">
+      <nav class="flex">
         <ul class="flex main-nav">
           <li><a href="#">On campus</a></li>
           <li><a href="#">Online</a></li>
           <li><a href="#">For Companies</a></li>
           <li><a href="#">Sign in</a></li>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <!-- Banner -->
-    <div class="banner flex">
+    <div class="banner flex dark-background">
         <img src="Resources/Images/banner.jpg" alt="banner" />
       <div class="banner-text flex">
         <div class="learn">
@@ -42,8 +43,8 @@
   </div>
 
     <!-- Featured post -->
-    <div class="information flex">
-      <div class="featured-post flex">
+    <div class="featured-content flex">
+      <div class="post-content-left flex">
         <img src="Resources/Images/information-main.jpg" alt="banner" />
         <span class="caption"><h2>It doesn't hurt to keep practicing</h2>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
@@ -51,34 +52,46 @@
           <p><span class="caption-small">Emanuel, Sr Strategist at Hiring.com</span></p>
       </div>
 
-      <div class="small-posts flex">
+      <div class="post-content-right flex">
 
-        <div>
-          <img src="Resources/Images/information-orientation.jpg" />
-          <div class="test"><h3>Orientation date</h3>
-          <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-          <a href="#">Read more</a></div>
+        <div class="post center flex">
+          <div class="image-container">
+            <img src="Resources/Images/information-orientation.jpg" />
+          </div>
+          <div class="post-text">
+            <h3>Orientation date</h3>
+            <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+            <a href="#">Read more</a>
+          </div>
         </div>
 
-        <div>
-          <img src="Resources/Images/information-campus.jpg" />
-          <h3>Our campus</h3>
-          <p>Find which campus is close by you</p>
-          <a href="#">Read more</a>
+        <div class="post center flex">
+          <div class="image-container">
+            <img src="Resources/Images/information-campus.jpg" />
+          </div>
+          <div class="post-text">
+            <h3>Our campus</h3>
+            <p>Find which campus is close by you</p>
+            <a href="#">Read more</a>
+          </div>
         </div>
 
-        <div>
-          <img src="Resources/Images/information-guest-lecture.jpg" />
-          <h3>Our guest lecture</h3>
-          <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-          <a href="#">Read more</a>
+        <div class="post center flex">
+          <div class="image-container">
+            <img src="Resources/Images/information-guest-lecture.jpg" />
+          </div>
+          <div class="post-text">
+            <h3>Our guest lecture</h3>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <a href="#">Read more</a>
+          </div>
         </div>
 
     </div>
   </div>
 
-    <!-- Call-out section -->
-    <div class="start-learning center">
+    <!-- Courses section -->
+    <div class="courses center">
       <h1>Start learning</h1>
 
       <div class="course-catalog flex">
@@ -155,28 +168,37 @@
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
       </div>
 
-      <div class="small-posts flex">
+      <div class="post-content-right thesis-right flex">
 
-        <div class="thesis-sub-post">
-          <img src="Resources/Images/thesis-fisma.jpg">
-          <h3>Fisma: Design and Prototype</h3>
-          <p>Designer showcase of new prototype product</p>
+        <div class="post center flex">
+          <div class="image-container">
+            <img src="Resources/Images/thesis-fisma.jpg">
+          </div>
+          <div class="post-text">
+            <h3>Fisma: Design and Prototype</h3>
+            <p>Designer showcase of new prototype product</p>
+          </div>
         </div>
 
-        <div class="thesis-sub-post">
-          <img src="Resources/Images/thesis-now-and-then.jpg">
-          <h3>Now and then</h3>
-          <p>Research study about New Yor</p>
+        <div class="post center flex">
+          <div class="image-container">
+            <img src="Resources/Images/thesis-now-and-then.jpg">
+          </div>
+          <div class="post-text">
+            <h3>Now and then</h3>
+            <p>Research study about New York</p>
+          </div>
         </div>
+      </div>
 
     </div>
   </div>
 </div>
 
     <!-- Footer -->
-<div class="footer">
+<footer>
   <hr>
   <p>&copy; Columar Academy. All rights reserved
-</div>
+</footer>
   </body>
 </html>

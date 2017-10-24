@@ -1,21 +1,31 @@
 body{
   font-size: 18px;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
 h1{
   font-size: 2rem;
   font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  color: #181818;
+}
+
+.center h1, .thesis h1{
   text-align: center;
+  padding: 32px;
+  color: #181818;
 }
 
 h2{
   font-size: 1.5rem;
   font-weight: bold;
+  color: #181818;
 }
 
 h3{
   font-size: 1.2rem;
   font-weight: bold;
+  color: #181818;
 }
 
 .flex{
@@ -33,17 +43,18 @@ h3{
 
 .center{
   justify-content: center;
+  align-items: center;
 }
 
 /* Header */
-.header{
+header{
   justify-content: space-between;
   height: 64px;
   padding: 0 24px;
   background-color: white;
 }
 
-.header .flex{
+header .flex{
   align-items: center;
 }
 
@@ -61,7 +72,7 @@ h3{
 .banner{
   padding: 32px 60px 32px 0;
   justify-content: space-around;
-  background-color: #D4D3D3;
+  background-color: #D4D4D4;
 }
 
 .banner img{
@@ -75,15 +86,18 @@ h3{
 }
 
 .button{
-  background-color: #444444;
+  background-color: #4A464A;
   justify-content: center;
-  padding: 8px;
+  border-radius: .25rem;
+  padding: 1rem;
   text-align: center;
   color: white;
 }
 
 .button:hover{
-  background-color: black;
+  background-color: #181818;
+  cursor: pointer;
+  transition: .5s ease-in;
 }
 
 .learn{
@@ -91,48 +105,67 @@ h3{
 }
 
 .learn h1{
-  line-height: 2.0rem;
-  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #181818;
+  text-align: center;
 }
 
 .learn p{
   padding-bottom: 1rem;
 }
 
-/* Featured post */
-.information{
+/* Featured content */
+.featured-content{
   padding: 32px 60px 32px 0;
+  margin-bottom: -10rem;
 }
 
-.featured-post{
+.post-content-left{
   flex-direction: column;
   width: 60%;
   padding: 0 24px;
 }
 
-.featured-post img{
+.post-content-left img{
   height: 55%;
   padding-bottom: 32px;
 }
 
-.small-posts{
+.post-content-right{
   flex-direction: column;
   width: 40%;
+  align-items: center;
 }
 
-.small-posts img{
+.post-content-right img{
   height: auto;
+  width: 100%;
+}
+
+.image-container{
   width: 35%;
+  height: auto;
+  margin: .88rem;
 }
 
-/* Call-out section */
-.start-learning{
-  background-color: #D4D3D3;
+.post-text{
+  width: 65%;
 }
 
-.start-learning h1{
-  text-align: center;
-  padding: 32px;
+.post:hover{
+  background-color: #D4D4D4;
+  cursor: pointer;
+}
+
+.post-text a{
+  text-decoration: none;
+  color: #44AADE;
+}
+
+/* Courses section */
+.courses{
+  background: #F4F4F3;
 }
 .course-catalog{
   flex-wrap: wrap;
@@ -159,18 +192,17 @@ h3{
 }
 
 /* Thesis exhibit */
-.thesis h1{
-  padding: 32px 0;
-}
-
 .thesis-video{
   flex-direction: column;
   padding: 0 24px;
   width: 60%;
 }
 
+.thesis-right{
+  margin-top: 1rem;
+}
 
 /* Footer  */
-.footer p{
+footer p{
   padding: 16px 24px;
 }
