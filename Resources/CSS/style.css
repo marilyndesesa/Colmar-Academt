@@ -1,5 +1,21 @@
 body{
-  font-size: 16px;
+  font-size: 18px;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .flex{
@@ -15,12 +31,15 @@ body{
   color: gray;
 }
 
+.center{
+  justify-content: center;
+}
+
 /* Header */
 .header{
   justify-content: space-between;
   height: 64px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 0 24px;
   background-color: white;
 }
 
@@ -39,12 +58,119 @@ body{
 }
 
 /* Banner */
+.banner{
+  padding: 32px 60px 32px 0;
+  justify-content: space-around;
+  background-color: #D4D3D3;
+}
 
+.banner img{
+  padding: 0 24px;
+  height: 100%;
+  width: 60%;
+}
+
+.banner-text{
+  align-items: center;
+}
+
+.button{
+  background-color: #444444;
+  justify-content: center;
+  padding: 8px;
+  text-align: center;
+  color: white;
+}
+
+.button:hover{
+  background-color: black;
+}
+
+.learn{
+  width: 85%;
+}
+
+.learn h1{
+  line-height: 2.0rem;
+  padding-bottom: 1rem;
+}
+
+.learn p{
+  padding-bottom: 1rem;
+}
 
 /* Featured post */
+.information{
+  padding: 32px 60px 32px 0;
+}
+
+.featured-post{
+  flex-direction: column;
+  width: 60%;
+  padding: 0 24px;
+}
+
+.featured-post img{
+  height: 55%;
+  padding-bottom: 32px;
+}
+
+.small-posts{
+  flex-direction: column;
+  width: 40%;
+}
+
+.small-posts img{
+  height: auto;
+  width: 35%;
+}
 
 /* Call-out section */
+.start-learning{
+  background-color: #D4D3D3;
+}
+
+.start-learning h1{
+  text-align: center;
+  padding: 32px;
+}
+.course-catalog{
+  flex-wrap: wrap;
+  padding: 0 72px;
+  justify-content: center;
+}
+
+.course{
+  width: 25%;
+  margin: 32px;
+  background: white;
+}
+
+.course img{
+  height: auto;
+  width: 100%;
+}
+
+#courses{
+  padding: 8px 0;
+}
+.course-text{
+  padding: 16px;
+}
 
 /* Thesis exhibit */
+.thesis h1{
+  padding: 32px 0;
+}
+
+.thesis-video{
+  flex-direction: column;
+  padding: 0 24px;
+  width: 60%;
+}
+
 
 /* Footer  */
+.footer p{
+  padding: 16px 24px;
+}
