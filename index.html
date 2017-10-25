@@ -15,10 +15,18 @@
     <!-- Header -->
     <header class="flex">
 
-      <div class="flex logo">
+      <div class="desktop-only flex logo">
         <img src="Resources/Images/ic-logo.svg" alt="logo" />
         <span class="logo-text flex"><span class="bold">COLMAR</strong></span><span class="light">ACADMEY</span></span>
       </div>
+
+      <nav class="mobile-menu">
+          <a href="#"><img src="Resources/Images/ic-logo.svg" alt="logo"/></a>
+          <a href="#"><img src="Resources/Images/ic-on-campus.svg" alt="logo"/></a>
+          <a href="#"><img src="Resources/Images/ic-online.svg" alt="logo"/></a>
+          <a href="#"><img src="Resources/Images/ic-login.svg" alt="logo"/></a>
+      </nav>
+
 
       <nav class="flex">
         <ul class="flex main-nav">
@@ -26,12 +34,13 @@
           <li><a href="#">Online<span></span><span></span></a></li>
           <li><a href="#">For Companies<span></span><span></span></a></li>
           <li><a href="#">Sign in<span></span><span></span></a></li>
+        </ul>
       </nav>
     </header>
 
     <!-- Banner -->
     <div class="banner flex dark-background">
-        <div class="content-left flex">
+        <div class="content-left mobile-banner flex">
             <img src="Resources/Images/banner.jpg" alt="banner" />
         </div>
       <div class="banner-text flex">
@@ -47,7 +56,7 @@
 
     <!-- Featured post -->
     <div class="featured-content flex">
-      <div class="content-left flex">
+      <div class="content-left mobile-hide flex">
         <div class="lg-image-container">
           <img src="Resources/Images/information-main.jpg" alt="banner" />
         </div>
@@ -61,7 +70,8 @@
 
         <div class="post center border-bottom flex">
           <div class="image-container">
-            <img src="Resources/Images/information-orientation.jpg" />
+            <img src="Resources/Images/information-orientation.jpg" alt="orientation-image" class="mobile-hide"/>
+            <img src="Resources/Images/information-orientation-mobile.jpg" alt="orientation-image" class="mobile-only"/>
           </div>
           <div class="post-text">
             <h3>Orientation date</h3>
@@ -72,7 +82,8 @@
 
         <div class="post center border-bottom flex">
           <div class="image-container">
-            <img src="Resources/Images/information-campus.jpg" />
+            <img src="Resources/Images/information-campus.jpg" alt="campus-image" class="mobile-hide"/>
+            <img src="Resources/Images/information-campus-mobile.jpg" alt="campus-image" class="mobile-only"/>
           </div>
           <div class="post-text">
             <h3>Our campus</h3>
@@ -83,7 +94,8 @@
 
         <div class="post center flex">
           <div class="image-container">
-            <img src="Resources/Images/information-guest-lecture.jpg" />
+            <img src="Resources/Images/information-guest-lecture.jpg" alt="Oliver Sack" class="mobile-hide"/>
+            <img src="Resources/Images/information-guest-lecture-mobile.jpg" alt="Oliver Sack" class="mobile-only"/>
           </div>
           <div class="post-text">
             <h3>Our guest lecture</h3>
@@ -102,7 +114,7 @@
       <div class="course-catalog flex">
 
         <div class="course-container">
-          <img src="Resources/Images/course-software.jpg">
+          <img src="Resources/Images/course-software.jpg" alt="engineering" class="mobile-hide">
           <div class="course-text">
             <h3>Software engineering</h3>
             <p id="courses">COURSES</p>
@@ -111,7 +123,7 @@
         </div>
 
         <div class="course-container">
-          <img src="Resources/Images/course-computer-art.jpg">
+          <img src="Resources/Images/course-computer-art.jpg" alt="computer" class="mobile-hide">
           <div class="course-text">
             <h3>Computer art</h3>
             <p id="courses">COURSES</p>
@@ -120,7 +132,7 @@
         </div>
 
         <div class="course-container">
-          <img src="Resources/Images/course-design.jpg">
+          <img src="Resources/Images/course-design.jpg" alt="design" class="mobile-hide">
           <div class="course-text">
             <h3>Design</h3>
             <p id="courses">COURSES</p>
@@ -129,7 +141,7 @@
         </div>
 
         <div class="course-container">
-          <img src="Resources/Images/course-data.jpg">
+          <img src="Resources/Images/course-data.jpg" alt="data" class="mobile-hide">
           <div class="course-text">
             <h3>Data</h3>
             <p id="courses">COURSES</p>
@@ -138,7 +150,7 @@
         </div>
 
         <div class="course-container">
-          <img src="Resources/Images/course-business.jpg">
+          <img src="Resources/Images/course-business.jpg" alt="business" class="mobile-hide">
           <div class="course-text">
             <h3>Business</h3>
             <p id="courses">COURSES</p>
@@ -147,7 +159,7 @@
         </div>
 
         <div class="course-container">
-          <img src="Resources/Images/course-marketing.jpg">
+          <img src="Resources/Images/course-marketing.jpg" alt="marketing" class="mobile-hide">
           <div class="course-text">
             <h3>Marketing</h3>
             <p id="courses">COURSES</p>
@@ -169,11 +181,11 @@
         <video width="100%" controls>
           <source src="Resources/Videos/thesis.mp4" type="video/mp4">
         </video>
-        <h2>Reimagine urban</h2>
-          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+        <h2 class="mobile-hide">Reimagine urban</h2>
+          <p class="mobile-hide">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
       </div>
 
-      <div class="post-content-right thesis-right flex">
+      <div class="post-content-right mobile-hide flex">
 
         <div class="post center flex">
           <div class="image-container">
@@ -205,7 +217,7 @@
   <hr>
   <div class="flex">
     <p>&copy; Columar Academy. All rights reserved</p>
-    <p><a href="#">Terms</a> <a href="#">Privacy</a></p>
+    <p class="mobile-hide"><a href="#">Terms</a> <a href="#">Privacy</a></p>
   </div>
 </footer>
   </body>

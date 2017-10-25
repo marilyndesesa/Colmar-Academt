@@ -25,7 +25,7 @@ h2{
 }
 
 h3{
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   font-weight: bold;
   color: #181818;
   padding: .5rem 0;
@@ -71,10 +71,19 @@ nav a{
   margin-left: .88rem;
   position: relative;
 }
+.mobile-menu{
+  display: none;
+}
 
-/*header mobile*/
+/* MOBILE - Header */
 @media only screen and (max-width: 600px){
-  .main-nav, .logo-text{
+  .mobile-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .main-nav, .logo-text, .desktop-only{
     display: none;
   }
   header{
@@ -214,6 +223,32 @@ nav a:hover span:last-child:after{
   padding-bottom: 1rem;
 }
 
+/* MOBILE - Banner */
+@media only screen and (max-width: 600px){
+ .banner{
+   padding: 0 0 1.77rem;
+   flex-direction: column;
+ }
+
+.mobile-banner{
+   margin: 0 !important;
+   height: auto;
+   width: 100% !important;
+ }
+
+.banner-text{
+  margin: 1.77rem 0;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.learn p{
+  padding-bottom: 1.33rem;
+}
+
+}
+
 /* Featured content */
 .featured-content{
   padding: 1.77rem 60px 1.77rem 0;
@@ -280,11 +315,61 @@ nav a:hover span:last-child:after{
   color: #457EAC;
 }
 
+.mobile-only{
+  display: none;
+}
+
+/* MOBILE - Featured Content */
+@media only screen and (max-width: 600px){
+  .mobile-hide{
+    display: none;
+  }
+
+  .mobile-only{
+    display: flex;
+  }
+
+  .featured-content{
+    padding: 0;
+    border-bottom: 1px solid #D4D4D4;
+  }
+
+  .post-content-right{
+    width: 100%;
+    margin: .88rem;
+  }
+
+  .post{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.55rem;
+  }
+
+  .post:hover{
+    background-color: transparent;
+  }
+
+  .post-text{
+    width: 100%;
+    padding-left: 16px;
+  }
+
+  .image-container{
+    width: 100%;
+  }
+
+  .border-left, .border-bottom{
+    border: 0px;
+  }
+
+}
+
 /* Courses section */
 .courses{
-  background: #F4F4F3;
+  background-color: #F4F4F3;
   padding-bottom: 1.77rem;
 }
+
 .course-catalog{
   flex-wrap: wrap;
   margin: 0 72px;
@@ -310,6 +395,32 @@ nav a:hover span:last-child:after{
   padding: .88rem;
 }
 
+/* MOBILE - Courses section */
+@media only screen and (max-width: 600px){
+  .courses{
+    background: transparent;
+  }
+  .course-catalog{
+    margin: 0 auto;
+  }
+
+  .course-container{
+    width: 100%;
+    background-color: #F4F4F3;
+    padding: 16px 16px 24px;
+    margin: .44rem .88rem;
+  }
+
+  .course-text h3{
+    font-size: 1.6rem;
+    padding: 0;
+  }
+
+  .course-text p{
+    display: none;
+  }
+}
+
 /* Thesis exhibit */
 .thesis{
   padding: 0 3.33rem 1.77rem 0;
@@ -324,6 +435,17 @@ nav a:hover span:last-child:after{
 .thesis h2{
   font-size: 1.4rem;
   padding: 1.33rem 0 .45rem 0;
+}
+
+/* MOBILE - Thesis section */
+@media only screen and (max-width: 600px){
+  .thesis{
+    padding: 0;
+    margin-bottom: 1.45rem;
+  }
+  .content-left{
+    width: 100%;
+  }
 }
 
 /* Footer  */
