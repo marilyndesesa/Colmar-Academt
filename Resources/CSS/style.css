@@ -396,6 +396,11 @@ nav a:hover span:last-child:after{
 }
 
 /* MOBILE - Courses section */
+@media only screen and (max-width: 900px){
+  .course-container{
+    width: 40%;
+  }
+}
 @media only screen and (max-width: 600px){
   .courses{
     background: transparent;
